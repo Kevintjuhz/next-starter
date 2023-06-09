@@ -14,7 +14,6 @@
     "@mux/mux-video-react": "^0.7.8",
     "@tailwindcss/line-clamp": "^0.4.2",
     "classnames": "^2.3.2",
-    "cookies-next": "^2.1.1",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "flowbite": "^1.6.4",
@@ -22,7 +21,6 @@
     "moment": "^2.29.4",
     "next": "^13.4.4",
     "react": "^18.2.0",
-    "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
     "uuid": "^9.0.0"
   },
