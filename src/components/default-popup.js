@@ -1,5 +1,7 @@
+'use client';
+
 import ReactDOM from 'react-dom';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import CrossIcon from '@/components/icons/cross-icon';
 import WarningIcon from '@/components/icons/warning-icon';
 

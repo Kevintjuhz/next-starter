@@ -1,10 +1,24 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/pages/*": ["./src/pages/*"],
-      "@/queries/*": ["./queries/*"],
+      "@/*": [
+        "./src/*"
+      ],
+      "@/services/*": [
+        "./services/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/styles/*": [
+        ".src/styles/*"
+      ],
+      "@/pages/*": [
+        "./src/pages/*"
+      ],
+      "@/queries/*": [
+        "./queries/*"
+      ]
     }
   }
 }

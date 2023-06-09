@@ -10,7 +10,7 @@ export const GetStreamBySlug = gql`
         url(width: 1920)
       }
       speakers {
-        _id 
+        _id
         __typename
         bio
         full_name

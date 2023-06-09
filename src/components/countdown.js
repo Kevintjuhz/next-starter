@@ -1,3 +1,4 @@
+'use client';
 import useCountdown from '@/hooks/useCountdown';
 
 export default function CountDown({ startDate }) {

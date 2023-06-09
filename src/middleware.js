@@ -7,5 +7,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/page-pattern']
+  matcher: ['/page-pattern'],
 };

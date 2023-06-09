@@ -1,3 +1,5 @@
+'use client';
+
 import FacebookIcon from '@/components/icons/facebook-icon';
 import InstagramIcon from '@/components/icons/instagram-icon';
 import TwitterIcon from '@/components/icons/twitter-icon';
