@@ -47,6 +47,7 @@ export default function SidebarList() {
                 width={14}
                 height={14}
                 loading="lazy"
+                alt="All categories Icon"
               />
               <span className="ml-3">All categories</span>
             </a>
@@ -69,6 +70,7 @@ export default function SidebarList() {
                     width={14}
                     height={14}
                     loading="lazy"
+                    alt={`${category.title} Icon `}
                   />
                 )}
                 <span className="flex-1 ml-3 whitespace-nowrap">

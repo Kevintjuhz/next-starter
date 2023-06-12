@@ -17,6 +17,7 @@ export default function Badge({ label, icon, iconUrl, classes }) {
           width={12}
           height={12}
           loading="lazy"
+          alt="badge"
         />
       )}
 
