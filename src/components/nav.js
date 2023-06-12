@@ -14,7 +14,7 @@ export default function Nav() {
   const navItems = [
     {
       name: 'Page',
-      to: '/page-pattern',
+      to: '/page-pattern/home',
     },
     {
       name: 'Blog',
