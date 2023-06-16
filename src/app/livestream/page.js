@@ -1,6 +1,6 @@
-import { GetUpcomingLiveStreams } from '@/queries/get-upcoming-live-streams';
-import { GetRecordedLiveStreams } from '@/queries/get-recorded-live-streams';
-import { GetStreamBySlug } from '@/queries/get-stream-by-slug';
+import { GetUpcomingLiveStreams } from '@/queries/getUpcomingLiveStreams';
+import { GetRecordedLiveStreams } from '@/queries/getRecordedLiveStreams';
+import { GetStreamBySlug } from '@/queries/getStreamBySlug';
 import client from '@/services/apollo-client';
 import Hero from '@/components/hero';
 import LivestreamCard from '@/components/livestream-card';

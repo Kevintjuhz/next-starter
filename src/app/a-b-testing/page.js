@@ -1,6 +1,6 @@
 import ABSwitch from '@/components/a-b-switch';
 import PageStack from '@/components/page-stack';
-import { GetStaticPageBySlug } from '@/queries/get-static-page-by-slug';
+import { GetStaticPageBySlug } from '@/queries/getStaticPageBySlug';
 import client from '@/services/apollo-client';
 import { cookies } from 'next/headers';
 import { v4 } from 'uuid';

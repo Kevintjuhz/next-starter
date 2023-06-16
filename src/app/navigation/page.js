@@ -1,5 +1,5 @@
 import client from '@/services/apollo-client';
-import { GetNavigation } from '@/queries/get-navigation';
+import { GetNavigation } from '@/queries/GetNavigation';
 import MainNavigation from '@/components/main-navigation';
 
 async function getData() {

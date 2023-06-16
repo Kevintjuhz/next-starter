@@ -1,4 +1,4 @@
-import { GetStreamBySlug } from '@/queries/get-stream-by-slug';
+import { GetStreamBySlug } from '@/queries/getStreamBySlug';
 import Hero from '@/components/hero';
 import CountDown from '@/components/countdown';
 import Speakers from '@/components/speakers';

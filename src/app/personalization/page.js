@@ -1,4 +1,4 @@
-import { GetPageBySlug } from '@/queries/get-page-by-slug';
+import { GetPageBySlug } from '@/queries/getPageBySlug';
 import client from '@/services/apollo-client';
 import SegmentSwitch from '@/components/segment-switch';
 import PageStack from '@/components/page-stack';

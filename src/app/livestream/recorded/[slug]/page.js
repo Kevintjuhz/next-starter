@@ -1,4 +1,4 @@
-import { GetStreamBySlug } from '@/queries/get-stream-by-slug';
+import { GetStreamBySlug } from '@/queries/getStreamBySlug';
 import Speakers from '@/components/speakers';
 import Hero from '@/components/hero';
 import RecordedBadge from '@/components/badges/recorded-badge';
