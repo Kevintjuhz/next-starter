@@ -13,5 +13,5 @@ export default function NavDropdownIcon() {
         clipRule="evenodd"
       ></path>
     </svg>
-  )
+  );
 }

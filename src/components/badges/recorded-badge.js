@@ -6,7 +6,7 @@ export default function RecordedBadge({ size = 'sm' }) {
     <span
       className={classNames(
         size === 'lg' ? 'text-sm' : 'text-xs',
-        'bg-violet-50 text-violet-600 font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-violet-200 dark:text-violet-800',
+        'bg-violet-50 text-violet-600 font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-violet-200 dark:text-violet-800'
       )}
     >
       <CameraIcon />

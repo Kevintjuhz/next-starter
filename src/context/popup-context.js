@@ -1,10 +1,12 @@
-import React from 'react';
+'use client';
+
+import { createContext, useState } from 'react';
 import DefaultPopup from '@/components/default-popup';
 
-const PopupContext = React.createContext();
+const PopupContext = createContext();
 
 function PopupProvider({ children }) {
-  const [popup, setPopup] = React.useState(false);
+  const [popup, setPopup] = useState(false);
 
   const openPopup = () => {
     setPopup(true);

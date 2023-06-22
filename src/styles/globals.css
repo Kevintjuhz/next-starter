@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
 }
 
 @tailwind base;
@@ -13,7 +13,9 @@
         @apply mb-5 text-4xl font-bold leading-tight;
     }
 
-    .article p, .article ul, .article ol {
+    .article p,
+    .article ul,
+    .article ol {
         @apply mb-5;
     }
 
@@ -26,11 +28,10 @@
     }
 
     .article a {
-        @apply underline
+        @apply underline;
     }
 
     .article ol li {
         @apply mb-4;
     }
-
 }
