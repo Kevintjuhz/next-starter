@@ -18,13 +18,13 @@ async function getData(id) {
         'Prepr-Customer-Id': id,
       },
     },
-    fetchPolicy: 'no-cache',
+    fetchPolicy: 'network-only',
   });
 
   return data;
 }
 
-export default async function ABTestingPage({ searchParams }) {
+export default async function Page({ searchParams }) {
   const { customer_id } = searchParams;
   const cookieStore = cookies();
   let prepr_uid = cookieStore.get('__prepr_uid');

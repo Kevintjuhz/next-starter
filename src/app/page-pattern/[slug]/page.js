@@ -9,6 +9,7 @@ async function getData({ slug, segment }) {
       slug: slug,
       segment: segment ? segment : '',
     },
+    fetchPolicy: 'network-only'
   });
 
   return data;

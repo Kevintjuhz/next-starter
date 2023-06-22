@@ -42,7 +42,7 @@ async function getRecordedShows(today) {
   return data;
 }
 
-export default async function LivestreamsPage() {
+export default async function Page() {
   const today = new Date().toJSON().slice(0, 10);
 
   const liveShowData = getLiveShows();

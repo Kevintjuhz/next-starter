@@ -2,7 +2,7 @@ import Hero from '@/components/hero';
 import BlogList from '@/components/blog-list';
 import { BlogProvider } from '@/context/blog-context';
 
-export default function BlogPage() {
+export default function Page() {
   return (
     <BlogProvider>
       <div className="container mx-auto md:px-0">

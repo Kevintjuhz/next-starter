@@ -18,7 +18,7 @@ async function getData(slug) {
   return data;
 }
 
-export default async function UpcomingPage({ params }) {
+export default async function Page({ params }) {
   const { slug } = params;
   const data = await getData(slug);
 

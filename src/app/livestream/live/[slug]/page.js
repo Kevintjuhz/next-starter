@@ -16,7 +16,7 @@ async function getData(slug) {
   return data;
 }
 
-export default async function LiveStreamPage({ params }) {
+export default async function Page({ params }) {
   const { slug } = params;
   const data = await getData(slug);
   const liveEvent = data.LiveEvent;

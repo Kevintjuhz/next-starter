@@ -10,7 +10,7 @@ async function getData(segment) {
       slug: 'home-page-personalization',
       segment: segment || '',
     },
-    fetchPolicy: 'no-cache',
+    fetchPolicy: 'network-only',
   });
 
   return data;
