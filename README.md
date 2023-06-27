@@ -1,6 +1,6 @@
 # Next 13 Starter
 
-Look at the [Complete guide to Next and Prepr personalization](https://docs.prepr.io/connecting-front-end-apps/next-complete-guide) to learn more or check out the [Stackblitz demo](https://stackblitz.com/edit/next-starter-prepr-cms) for zero installation.
+Look at the [Complete guide to Next and Prepr personalization](https://docs.prepr.io/connecting-front-end-apps/next-complete-guide) to learn more.
 
 ## Setup
 
