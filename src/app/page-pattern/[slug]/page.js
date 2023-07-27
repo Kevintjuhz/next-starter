@@ -2,6 +2,8 @@ import { GetPageBySlug } from '@/queries/getPageBySlug';
 import PageStack from '@/components/page-stack';
 import client from '@/services/apollo-client';
 
+export const revalidate = 0;
+
 async function getData({ slug, segment }) {
   const { data } = await client.query({
     query: GetPageBySlug,

@@ -4,6 +4,8 @@ import { GetArticleBySlug } from '@/queries/getArticleBySlug';
 import Image from 'next/image';
 import client from '@/services/apollo-client';
 
+export const revalidate = 0;
+
 async function getData(slug) {
   const { data } = await client.query({
     query: GetArticleBySlug,

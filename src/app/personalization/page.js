@@ -3,6 +3,8 @@ import client from '@/services/apollo-client';
 import SegmentSwitch from '@/components/segment-switch';
 import PageStack from '@/components/page-stack';
 
+export const revalidate = 0;
+
 async function getData(segment) {
   const { data } = await client.query({
     query: GetPageBySlug,

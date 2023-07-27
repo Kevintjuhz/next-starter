@@ -7,6 +7,8 @@ import Image from 'next/image';
 import client from '@/services/apollo-client';
 import LiveForm from '@/components/live-form';
 
+export const revalidate = 0;
+
 async function getData(slug) {
   const { data } = await client.query({
     query: GetStreamBySlug,

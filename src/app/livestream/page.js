@@ -5,6 +5,8 @@ import client from '@/services/apollo-client';
 import Hero from '@/components/hero';
 import LivestreamCard from '@/components/livestream-card';
 
+export const revalidate = 0;
+
 async function getLiveShows() {
   const { data } = await client.query({
     query: GetStreamBySlug,

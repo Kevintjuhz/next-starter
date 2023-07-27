@@ -5,6 +5,8 @@ import Speakers from '@/components/speakers';
 import client from '@/services/apollo-client';
 import MuxWrapper from '@/components/mux-wrapper';
 
+export const revalidate = 0;
+
 async function getData(slug) {
   const { data } = await client.query({
     query: GetStreamBySlug,
