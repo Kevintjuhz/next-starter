@@ -1,6 +1,6 @@
 import ArticleAuthor from '@/components/article-author';
 import NewsletterSubscribe from '@/components/newsletter-subscribe';
-import { GetArticleBySlug } from '@/queries/getArticleBySlug';
+import { GetArticleBySlug } from '@/queries/get-article-by-slug';
 import Image from 'next/image';
 import client from '@/services/apollo-client';
 

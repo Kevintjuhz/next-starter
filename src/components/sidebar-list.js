@@ -2,7 +2,7 @@
 
 import classNames from 'classnames';
 import Image from 'next/image';
-import { GetCategories } from '@/queries/getCategories';
+import { GetCategories } from '@/queries/get-categories';
 import { useQuery } from '@apollo/client';
 import { useContext } from 'react';
 import { BlogContext } from '@/context/blog-context';

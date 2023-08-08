@@ -1,7 +1,7 @@
 'use client';
 import { useContext } from 'react';
 import { BlogContext } from '@/context/blog-context';
-import { GetArticles } from '@/queries/getArticles';
+import { GetArticles } from '@/queries/get-articles';
 import { useQuery } from '@apollo/client';
 import ArticleCard from '@/components/article-card';
 

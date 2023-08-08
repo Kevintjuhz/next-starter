@@ -1,4 +1,4 @@
-import { GetPageBySlug } from '@/queries/getPageBySlug';
+import { GetPageBySlug } from '@/queries/get-page-by-slug';
 import PageStack from '@/components/page-stack';
 import client from '@/services/apollo-client';
 

@@ -1,6 +1,6 @@
 import Hero from '@/components/hero';
 import LiveBadge from '@/components/badges/live-badge';
-import { GetStreamBySlug } from '@/queries/getStreamBySlug';
+import { GetStreamBySlug } from '@/queries/get-stream-by-slug';
 import Speakers from '@/components/speakers';
 import client from '@/services/apollo-client';
 import MuxWrapper from '@/components/mux-wrapper';
