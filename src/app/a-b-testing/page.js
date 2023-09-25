@@ -3,7 +3,6 @@ import PageStack from '@/components/page-stack';
 import { GetStaticPageBySlug } from '@/queries/get-static-page-by-slug';
 import client from '@/services/apollo-client';
 import { cookies } from 'next/headers';
-import { v4 } from 'uuid';
 
 export const revalidate = 0;
 
@@ -27,10 +26,11 @@ async function getData(id) {
 export default async function Page({ searchParams }) {
   const { customer_id } = searchParams;
   const cookieStore = cookies();
-  let prepr_uid = cookieStore.get('__prepr_uid');
+  let prepr_uid = await cookieStore.get('__prepr_uid');
 
+  // If no cookie was found generate a UUID
   if (!prepr_uid) {
-    prepr_uid = { value: v4() };
+    prepr_uid = { value: crypto.randomUUID() };
   }
 
   const customer = customer_id || prepr_uid.value;
@@ -39,8 +39,9 @@ export default async function Page({ searchParams }) {
 
   return (
     <>
-      <div className="grid max-w-screen-xl mx-auto mb-12">
-        <ABSwitch title="Try it out!" customer={customer} />
+      <div className='grid max-w-screen-xl mx-auto mb-12'>
+        {/* Pass UUID to client to be able to trigger server action */}
+        <ABSwitch title='Try it out!' customer={customer} cookie={prepr_uid} />
       </div>
       <PageStack stack={data.Page.stack} />
     </>

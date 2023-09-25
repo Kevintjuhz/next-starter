@@ -3,13 +3,20 @@
 import classNames from 'classnames';
 import { usePathname, useRouter } from 'next/navigation';
 import { clientIds } from '@/values/client-ids';
+import { createCookie } from '@/app/actions';
+import { useEffect } from 'react';
 
-export default function ABSwitch({ title, customer }) {
+export default function ABSwitch({ title, customer, cookie }) {
   const pathname = usePathname();
   const router = useRouter();
 
   const foundCustomer = clientIds.find(clientId => clientId.id === customer);
   const version = foundCustomer ? foundCustomer.name : 'you';
+
+  useEffect(() => {
+    // Trigger server action to set the user cookie
+    createCookie(cookie.value);
+  }, []);
 
   const handleVersionChange = (e, passedVersion) => {
     e.preventDefault();
@@ -22,22 +29,22 @@ export default function ABSwitch({ title, customer }) {
   };
 
   return (
-    <div className="grid mx-4 lg:mx-0">
-      <div className="rounded-xl bg-gray-50">
-        <div className="px-8 py-7">
-          <h2 className="inline text-xl font-semibold leading-tight text-gray-900 sm:block">
+    <div className='grid mx-4 lg:mx-0'>
+      <div className='rounded-xl bg-gray-50'>
+        <div className='px-8 py-7'>
+          <h2 className='inline text-xl font-semibold leading-tight text-gray-900 sm:block'>
             {title}
           </h2>
-          <p className="my-4 text-base">
+          <p className='my-4 text-base'>
             See our A/B testing engine in action by selecting a version below.
           </p>
 
           <div
-            className="inline-flex w-full rounded-md shadow-sm md:w-auto"
-            role="group"
+            className='inline-flex w-full rounded-md shadow-sm md:w-auto'
+            role='group'
           >
             <button
-              type="button"
+              type='button'
               onClick={e => {
                 handleVersionChange(e, 'you');
               }}
@@ -52,7 +59,7 @@ export default function ABSwitch({ title, customer }) {
             </button>
 
             <button
-              type="button"
+              type='button'
               onClick={e => {
                 handleVersionChange(e, 'a');
               }}
@@ -67,7 +74,7 @@ export default function ABSwitch({ title, customer }) {
             </button>
 
             <button
-              type="button"
+              type='button'
               onClick={e => {
                 handleVersionChange(e, 'b');
               }}
