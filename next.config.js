@@ -4,9 +4,6 @@ const nextConfig = {
   env: {
     PREPR_ACCESS_TOKEN: process.env.PREPR_ACCESS_TOKEN,
   },
-  experimental: {
-    serverActions: true,
-  },
   images: {
     domains: [
       'demo-site-patterns.stream.prepr.io',
